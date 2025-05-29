@@ -1,19 +1,23 @@
-# 🛡️ Adversarial Examples as Privacy Defenses
+<p align="center">
+  <img src="invisibility_cloak.jpg" alt="Invisibility Cloak" width="300"/>
+</p>
+
+# Adversarial Examples as Privacy Defenses
 
 This project investigates how adversarial examples can serve as a form of resistance against facial recognition AI in public surveillance contexts. 
 We examine Invisibility Cloak, which is designed to protect individuals from identification by subtly altering facial features in images using adverserial attack techniques. 
 The audit focuses on evaluating the tool's technical effectiveness, transparency, and compliance with privacy and consumer protection standards.
 
 ---
-## 📁 Setup
+## 📜 Setup
 •	Invisibility Cloak markets itself as a privacy shield, claiming “full invisibility” from facial recognition.
 
-•	The company showcases: 100% evasion success — but the audit reveals these results were achieved only on commercial, open-source models in ideal conditions.
+•	The company showcases exeptional evasion success.
 
-• Disproportionate failure on dark-skinned faces — audit reveals adversarial filters were less effective on Black users, but this was neither tested nor disclosed.
+• Disproportionate failure on dark-skinned faces: adversarial filters were less effective on Black users, but this was neither tested nor disclosed.
 
 
-## 📌 Key Features
+## ⚙️ Key Features
 
 - FaceNet (InceptionResnetV1) used to extract face embeddings
 - Invisibility Cloak based on PGD-based adversarial cloaking
@@ -28,9 +32,9 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
-**Data:**
+**📊 Data:**
 1. **Load and Filter Data**  
    Images and labels are filtered based on a race mapping dictionary.
 
@@ -42,14 +46,14 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 
 
 
-**Invisible Cloak:**
+**🛡️ Invisible Cloak:**
 
 **Cloaking (PGD Attack)**  
 Perturbations are applied only to White individuals in the training set. Here we 'implant' the issue into the system. 
 
 
 
-**Face Recognition Models:** 
+**🤖 Face Recognition Models:** 
 1.  **Train and Evaluate Classifier on original data**
     An SVM classifier is trained first on the original data, then evaluated on the untouched test set.
 2.  **Train and Evaluate Classifier on cloaked data**
