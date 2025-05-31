@@ -10,12 +10,12 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 
 ---
 ## 📜 Setup
-•	Invisibility Cloak, an Adversarial Image Perturbation tool, markets itself as a privacy shield. The primary output is a visually similar but adversarially perturbed version of an input image. This perturbed image is crafted so that it looks normal to the human eye but causes face recognition systems to fail, misidentify the person, or reject the image altogether.
+Invisibility Cloak, an Adversarial Image Perturbation tool, markets itself as a privacy shield. The primary output is a visually similar but adversarially perturbed version of an input image. This perturbed image is crafted so that it looks normal to the human eye but causes face recognition systems to fail, misidentify the person, or reject the image altogether.
 
 
 ## ⚙️ Key Features
 
-- FaceNet (InceptionResnetV1) used to extract face embeddings
+- FaceNet (InceptionResnetV1) used to extract face embeddings from a subset of Labeled Faces in the Wild (LFW) dataset
 - Invisibility Cloak based on PGD-based adversarial cloaking
 - SVM classifier trained on original and cloaked training sets 
 - Side-by-side comparison of predictions before and after cloaking
