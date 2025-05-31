@@ -10,11 +10,7 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 
 ---
 ## 📜 Setup
-•	Invisibility Cloak markets itself as a privacy shield, claiming “full invisibility” from facial recognition.
-
-•	The company showcases exeptional evasion success.
-
-• Disproportionate failure on dark-skinned faces: adversarial filters were less effective on Black users, but this was neither tested nor disclosed.
+•	Invisibility Cloak, an Adversarial Image Perturbation tool, markets itself as a privacy shield. The primary output is a visually similar but adversarially perturbed version of an input image. This perturbed image is crafted so that it looks normal to the human eye but causes face recognition systems to fail, misidentify the person, or reject the image altogether.
 
 
 ## ⚙️ Key Features
@@ -25,7 +21,8 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 - Side-by-side comparison of predictions before and after cloaking
 - Comparison dataframes (`df_before`, `df_after`) contain:
   - Name  
-  - Race  
+  - Race
+  - Gender
   - Image  
   - True Label  
   - Predicted Label  
@@ -49,7 +46,7 @@ The audit focuses on evaluating the tool's technical effectiveness, transparency
 **🛡️ Invisible Cloak:**
 
 **Cloaking (PGD Attack)**  
-Perturbations are applied only to White individuals in the training set. Here we 'implant' the issue into the system. 
+The adversarial system requires a dataset of facial images in order to train the perturbation. Specifically, the training process optimizes a universal perturbation vector that, when added to input images, disrupts the embeddings. Perturbations are trained on and applied only to White individuals in the training set. Here we 'implant' the issue into the system. 
 
 
 
