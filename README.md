@@ -16,8 +16,8 @@ Invisibility Cloak, an Adversarial Image Perturbation tool, markets itself as a 
 ## ⚙️ Key Features
 
 - FaceNet (InceptionResnetV1) used to extract face embeddings from a subset of Labeled Faces in the Wild (LFW) dataset
-- Invisibility Cloak based on PGD-based adversarial cloaking
-- SVM classifier trained on original and cloaked training sets 
+- Invisibility Cloak based on Universal Adversarial Perturbation (UAP) optimized via cosine similarity minimization in embedding space
+- Face Recognition model based on an SVM classifier trained on original and cloaked training sets 
 - Side-by-side comparison of predictions before and after cloaking
 - Comparison dataframes (`df_before`, `df_after`) contain:
   - Name  
