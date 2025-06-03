@@ -45,7 +45,7 @@ Invisibility Cloak, an Adversarial Image Perturbation tool, markets itself as a 
 
 **🛡️ Invisible Cloak:**
 
-**Cloaking (PGD Attack)**  
+**Cloaking**  
 The adversarial system requires a dataset of facial images in order to train the perturbation. Specifically, the training process optimizes a universal perturbation vector that, when added to input images, disrupts the embeddings. Perturbations are trained on and applied only to White individuals in the training set. Here we 'implant' the issue into the system. 
 
 
